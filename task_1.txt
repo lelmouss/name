@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+
+var prompter = prompt("What is your name? ");
+
+
+if (prompter === null || !isNaN(prompter)){
+
+    while (prompter !== null || isNaN(prompter)){
+        alert("Invalid name, please try again");
+        prompter = prompt("What is your name ? ");
+       if (prompter !== null || isNaN(prompter)){
+           document.write("My name is ", prompter);
+       }
+    }
+}else {
+    document.write("My name is ", prompter);
+}
+
+</script>
+
+</body>
+</html>
